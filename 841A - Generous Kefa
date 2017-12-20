@@ -1,5 +1,7 @@
 import java.util.Scanner;
-
+/*
+ * Created by Enrique Rodriguez 12/17/2017
+ */
 public class GenerousKefa841A {
 
 	public static void main(String[] args) {
