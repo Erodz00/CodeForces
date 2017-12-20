@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+/*
+ * Created by Enrique Rodriguez 2017
+ */
+public class ChessTourney845A {
+	public static void main(String[] a){
+		Scanner scan = new Scanner(System.in);
+		int n = scan.nextInt();
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		for (int i=0; i<n*2; i++){
+			list.add(scan.nextInt());
+		}
+    scan.close();
+			Collections.sort(list);
+			
+			if(list.get(list.size()/2-1) < list.get(list.size()/2)) {
+				System.out.println("YES");
+			} else {
+			System.out.println("NO");
+			}
+		}
+	}
