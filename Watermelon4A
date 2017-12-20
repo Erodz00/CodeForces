@@ -5,7 +5,7 @@ public class Watermelon4A {
 	public static void main(String[] args) {
 			Scanner scan = new Scanner (System.in);
 			int a=scan.nextInt();
-      scan.close();
+   			scan.close();
 			if(a==2) {
 				System.out.println("NO");
 				return;
