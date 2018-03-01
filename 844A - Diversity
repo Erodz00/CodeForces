@@ -1,0 +1,28 @@
+import java.util.Scanner;
+/*
+*Created by Enrique Rodriguez 2017-08-25 
+*/
+public class Codeforces844A {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		String s = scan.nextLine();
+		int k = scan.nextInt();
+		int letters = 0;
+
+		if (s.length() < k) {
+			System.out.println("impossible");
+			return;
+		}
+		
+		for (int i=0; i<26; i++) {
+			if (s.contains((char)('a'+i)+ "")) letters++;
+		}
+		
+		if (letters >= k) {
+			System.out.println("0");
+		} else {
+			System.out.println(k-letters);
+		}
+	}
+}
