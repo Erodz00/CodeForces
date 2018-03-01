@@ -1,0 +1,16 @@
+import java.util.Scanner;
+/*
+*Created by Enrique Rodriguez 2018-02-26
+*/
+public class Codeforces919A {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		double n = scan.nextInt(), m = scan.nextInt(), smallest = 999999999;
+		for(int i =0;i<n;i++){
+			double a = scan.nextInt(), b = scan.nextInt(), xd = (m/b)*a;
+			if(xd<smallest) smallest=xd;
+		}
+		System.out.println(smallest);
+	}
+}
