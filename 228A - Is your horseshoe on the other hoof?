@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Codeforces228A {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		int c = scan.nextInt();
+		int d = scan.nextInt();
+		int count = 0;
+			if(a == b || a == c ||  a == d){
+			  count++;
+			}else if(b==c || b==d){
+				count++;
+			}else if(c==d){
+				count++;
+			}
+			System.out.println(count);
+		}
+}
