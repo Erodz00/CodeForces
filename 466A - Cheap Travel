@@ -1,0 +1,16 @@
+import java.util.Scanner;
+/*
+*Created by Enrique Rodriguez 2018-03-15 
+*/
+public  class Codeforces466A {
+    public static void main(String[] arg) throws Exception {
+
+        Scanner scan = new Scanner(System.in);
+
+        int n= scan.nextInt(), m = scan.nextInt(), a = scan.nextInt(), b = scan.nextInt();
+        int c=(n/m)*b;
+        int d=(n%m)*a;
+        if(d<=b) System.out.println(Math.min(c+d,a*n));
+        else System.out.println(Math.min(c+b,a*n));
+    }
+}
