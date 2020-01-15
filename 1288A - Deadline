@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Codeforces1288A {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int run = scan.nextInt();
+		loop : for (int i = 0; i < run; i++) {
+			double n = scan.nextDouble();
+			double d = scan.nextDouble();
+			if (d <= n) {
+				System.out.println("YES");
+				continue;
+			}
+			for (int j = 1; j <= d; j++) {
+				if (Math.ceil(d/(j+1) + j) <= n) {
+					System.out.println("YES");
+				 	continue loop;
+				}	
+				if(Math.ceil(d/(j+1) + j) > Math.ceil(d/((j-1)+1) + (j-1))) {
+					System.out.println("NO");
+					continue loop;
+				}
+			}
+
+		}
+	}
+}
