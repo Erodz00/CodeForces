@@ -6,9 +6,12 @@ public class Codeforces1288B {
 		Scanner scan = new Scanner(System.in);
 		int n = scan.nextInt();
 		for (int i = 0; i < n; i++) {
-			int a = scan.nextInt();
-			int b = scan.nextInt();
-			System.out.println(a * (String.valueOf(b + 1).length() - 1));
+			long a = scan.nextInt();
+			long b = scan.nextInt();
+			if (b == String.valueOf(Math.abs(b + 1)).length() - 1)
+				System.out.println((String.valueOf(Math.abs(b + 1)).length()) * a);
+			else
+				System.out.println((String.valueOf(Math.abs(b + 1)).length() - 1) * a);
 		}
 		scan.close();
 	}
